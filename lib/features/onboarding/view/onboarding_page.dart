@@ -1,7 +1,8 @@
-import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:grocy/const/app_defaults.dart';
 import 'package:grocy/const/colors/app_colors.dart';
+import 'package:grocy/core/router/router.gr.dart';
 
 import '../data/model/onboarding_model.dart';
 import '../data/onboarding_data.dart';
@@ -46,7 +47,7 @@ class _OnboardingViewState extends State<OnboardingView> {
   }
 
   _gotoLoginSignUp() {
-    // Navigator.pushNamed(context, AppRoutes.introLogin);
+    context.navigateTo(IntroLoginRoute());
   }
 
   @override

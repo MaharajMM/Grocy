@@ -16,5 +16,9 @@ class AppRouter extends RootStackRouter {
       path: '/',
       initial: true,
     ),
+    AutoRoute(
+      page: IntroLoginRoute.page,
+      path: '/intro-login',
+    ),
   ];
 }
